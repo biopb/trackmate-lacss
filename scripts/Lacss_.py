@@ -1,6 +1,6 @@
 #@ Dataset data
-#@ String (label="Lacss Server", value="lacss.cam.uchc.edu", columns=25) server_url
-#@ String (label="Lacss server Token", required=False) token
+#@ String (label="BioPB Server", value="cellpose.biopb.org:443", columns=25) server_url
+#@ String (label="BioPB server Token", required=False) token
 #@ Double (label="Min Area", min=0, value=0) min_area
 #@ Double (Lable="Min Score", min=0, max=1.0, style="format:#.##", value=0.4) min_score
 #@ Double (label="Scaling", min=0.1, max=4.0, style="format:#.##", value=1.0) scaling
