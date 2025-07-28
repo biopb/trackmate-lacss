@@ -13,7 +13,7 @@
 
 	<groupId>sc.fiji</groupId>
 	<artifactId>trackmate-lacss</artifactId>
-	<version>0.6.1-SNAPSHOT</version>
+	<version>0.6.1</version>
 
 	<name>TrackMate-Lacss</name>
 	<description>TrackMate detector based on the Lacss model.</description>
