@@ -31,7 +31,6 @@ import net.imglib2.converter.RealTypeConverters;
 import net.imglib2.type.NativeType;
 import net.imglib2.type.numeric.RealType;
 import net.imglib2.type.numeric.real.FloatType;
-import net.imglib2.util.Util;
 import net.imglib2.view.Views;
 
 public class LacssDetector<T extends RealType<T> & NativeType<T>> implements SpotDetector<T> {
@@ -120,8 +119,7 @@ public class LacssDetector<T extends RealType<T> & NativeType<T>> implements Spo
 		}
 
 		// copy to byte array.
-		final RealType<T> in = Util.getTypeFromInterval(crop);
-		Converter<RealType<T>, FloatType> converter = RealTypeConverters.getConverter(in, new FloatType());
+		Converter<RealType<T>, FloatType> converter = RealTypeConverters.getConverter(crop.getType(), new FloatType());
 		ByteBuffer buffer = ByteBuffer.allocate((int) (getIntervalSize() * Float.BYTES));
 
 		// flat iterator ensure XYZC order

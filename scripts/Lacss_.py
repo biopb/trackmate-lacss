@@ -23,7 +23,6 @@ from fiji.plugin.trackmate.detector.lacss import LacssUtils
 from fiji.plugin.trackmate.detector.lacss import Constants
 from fiji.plugin.trackmate.detector.lacss import LacssClient
 from fiji.plugin.trackmate.detector.lacss import LacssDetector
-from fiji.plugin.trackmate.detector.lacss import LacssDetectorFactory
 
 def run(data, server_url, token, min_area, min_score, scaling, nms):
 	imp = IJ.getImage()
